@@ -118,15 +118,15 @@ body{
 }
 
 .slide-1::before {
-  background-image: url(../images/slider1.jpg);
+  background-image: url(images/slider1.jpg);
 }
 
 .slide-2::before {
-  background-image: url(../images/slider2.jpg);
+  background-image: url(images/slider2.jpg);
 }
 
 .slide-3::before {
-  background-image: url(../images/cont-feed-bg.jpg);
+  background-image: url(images/cont-feed-bg.jpg);
 }
 
 .content {
