@@ -222,27 +222,49 @@ body{
   color: #ffffff; 
 }
 
-.carousel-inner {
-  position: relative;
+/* Adjustments for mobile responsiveness */
+@media (max-width: 768px) {
+  .content {
+    text-align: center;
+    padding: 0 20px; 
+  }
+
+  .cont-h1 {
+    font-size: 28px;
+  }
+
+  .comp-p {
+    font-size: 16px;
+  }
+
+  .slider-btn-main {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  /* Adjust background images for smaller screens */
+  .slide-1::before, 
+  .slide-2::before, 
+  .slide-3::before {
+    background-position: center center;
+    background-size: cover;
+  }
 }
 
-.carousel-control-prev, .carousel-control-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: white;
-  border: none;
-  font-size: 30px;
-  padding: 10px;
-  cursor: pointer;
-}
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .cont-h1 {
+    font-size: 24px;
+  }
 
-.carousel-control-prev {
-  left: 10px;
-}
+  .comp-p {
+    font-size: 14px;
+  }
 
-.carousel-control-next {
-  right: 10px;
+  .slider-btn-main {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
 }
 
 /* divider */
@@ -541,6 +563,21 @@ body{
   align-items: center; /* Center the icon and text vertically */
 }
 
+/* Media query for screens smaller than 768px (mobile devices) */
+@media (max-width: 768px) {
+  .our-work-area-content {
+    flex-direction: column; /* Stack content vertically */
+    margin-top: 0; /* Adjust overlap if necessary */
+    left: 0; /* Remove left positioning */
+    right: 0; /* Remove right positioning */
+    width: auto; /* Take full width */
+    height: auto; /* Adjust height automatically */
+    padding: 15px; /* Adjust padding for mobile screens */
+    align-items: flex-start; /* Align items to the start */
+    text-align: center; /* Optional: center text alignment */
+  }
+}
+
 .our-area-icon {
   display: flex;
   justify-content: center;
@@ -560,6 +597,24 @@ body{
 .our-area-icon i {
   color: #ffffff;
   font-size: 2em; /* Icon size */
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .our-area-icon {
+    width: 50px; /* Adjust width for smaller screens */
+    height: 50px; /* Adjust height for smaller screens */
+    margin: 0 auto; /* Center the icon horizontally */
+  }
+}
+
+/* Media query for very small screens (e.g., phones) */
+@media (max-width: 480px) {
+  .our-area-icon {
+    width: 50px; /* Further reduce width */
+    height: 50px; /* Further reduce height */
+    margin: 0 auto; /* Center the icon horizontally */
+  }
 }
 
 .our-area-icon i:hover {
